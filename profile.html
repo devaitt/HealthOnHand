@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль — HealthOnHand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">HealthOnHand</a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="blog.html">Блог</a>
+            <a href="profile.html" class="active">Профиль</a>
+        </nav>
+        <div class="cart">🛒 <span class="cart-count">0</span></div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <span>Профиль</span>
+        </div>
+
+        <h1 class="section-title">Личный кабинет</h1>
+
+        <!-- Навигация профиля -->
+        <div class="profile-tabs">
+            <button class="profile-tab active" data-tab="personal">Личные данные</button>
+            <button class="profile-tab" data-tab="orders">История заказов</button>
+            <button class="profile-tab" data-tab="favorites">Избранное</button>
+        </div>
+
+        <!-- Личные данные -->
+        <div class="profile-tab-content active" id="personal">
+            <div class="profile-card">
+                <h2>Личные данные</h2>
+                
+                <div class="profile-avatar">
+                    <div class="avatar-placeholder">👤</div>
+                    <button class="btn btn-outline" style="padding: 8px 20px;">Изменить фото</button>
+                </div>
+
+                <form class="profile-form" id="profileForm">
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input type="text" id="profileName" placeholder="Имя" value="Даниил">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Фамилия</label>
+                        <input type="text" id="profileLastName" placeholder="Костюшкин" value="Костюшкин">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="profileEmail" placeholder="example@mail.ru" value="example@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" id="profilePhone" placeholder="+375 29 123-45-67" value="+375 29 123-45-67">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Адрес доставки</label>
+                        <textarea id="profileAddress" rows="3">г. Минск, ул. Девайта, д. 9, кв. 99</textarea>
+                    </div>
+
+                    <div class="profile-actions">
+                        <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                        <button type="button" class="btn btn-outline" id="logoutBtn">Выйти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- История заказов -->
+        <div class="profile-tab-content" id="orders">
+            <div class="profile-card">
+                <h2>История заказов</h2>
+
+                <div class="orders-list">
+                    <div class="order-item">
+                        <div class="order-header">
+                            <span class="order-number">Заказ №2384</span>
+                            <span class="order-date">12 марта 2026</span>
+                            <span class="order-status delivered">Доставлен</span>
+                        </div>
+                        <div class="order-products">
+                            <div class="order-product">
+                                <span class="order-product-title">Xiaomi Mi Band 8</span>
+                                <span class="order-product-price">159 BYN × 1</span>
+                            </div>
+                            <div class="order-product">
+                                <span class="order-product-title">Силиконовый ремешок</span>
+                                <span class="order-product-price">25 BYN × 2</span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            Итого: <strong>209 BYN</strong>
+                        </div>
+                        <button class="btn btn-outline" style="margin-top: 15px;">Повторить заказ</button>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="order-header">
+                            <span class="order-number">Заказ №2156</span>
+                            <span class="order-date">28 февраля 2026</span>
+                            <span class="order-status processing">В обработке</span>
+                        </div>
+                        <div class="order-products">
+                            <div class="order-product">
+                                <span class="order-product-title">Garmin Venu 3</span>
+                                <span class="order-product-price">1249 BYN × 1</span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            Итого: <strong>1249 BYN</strong>
+                        </div>
+                        <button class="btn btn-outline" style="margin-top: 15px;">Отследить</button>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="order-header">
+                            <span class="order-number">Заказ №1987</span>
+                            <span class="order-date">15 января 2026</span>
+                            <span class="order-status delivered">Доставлен</span>
+                        </div>
+                        <div class="order-products">
+                            <div class="order-product">
+                                <span class="order-product-title">Huawei Band 8</span>
+                                <span class="order-product-price">129 BYN × 1</span>
+                            </div>
+                            <div class="order-product">
+                                <span class="order-product-title">Защитное стекло</span>
+                                <span class="order-product-price">15 BYN × 1</span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            Итого: <strong>144 BYN</strong>
+                        </div>
+                        <button class="btn btn-outline" style="margin-top: 15px;">Оставить отзыв</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Избранное -->
+        <div class="profile-tab-content" id="favorites">
+            <div class="profile-card">
+                <h2>Избранное</h2>
+
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <div class="favorite-image">⌚</div>
+                        <div class="favorite-info">
+                            <h4>Xiaomi Mi Band 8 Pro</h4>
+                            <div class="favorite-price">259 BYN</div>
+                        </div>
+                        <button class="favorite-remove">✕</button>
+                    </div>
+
+                    <div class="favorite-item">
+                        <div class="favorite-image">⌚</div>
+                        <div class="favorite-info">
+                            <h4>Samsung Galaxy Watch 6</h4>
+                            <div class="favorite-price">1299 BYN</div>
+                        </div>
+                        <button class="favorite-remove">✕</button>
+                    </div>
+
+                    <div class="favorite-item">
+                        <div class="favorite-image">⌚</div>
+                        <div class="favorite-info">
+                            <h4>Amazfit GTS 4</h4>
+                            <div class="favorite-price">499 BYN</div>
+                        </div>
+                        <button class="favorite-remove">✕</button>
+                    </div>
+                </div>
+
+               <button class="btn btn-primary favorites-add-to-cart" id="favoritesAddToCartBtn" style="margin-top: 20px;">Добавить в корзину выбранное</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copy">© 2026 HealthOnHand. Все права защищены.</div>
+            <div class="footer__links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- POPUP КОРЗИНЫ (из главной) -->
+<div class="cart-popup" id="cartPopup">
+    <div class="cart-popup__overlay" id="cartOverlay"></div>
+    <div class="cart-popup__content">
+        <div class="cart-popup__header">
+            <h2>Корзина</h2>
+            <button class="cart-popup__close" id="closeCartPopup">✕</button>
+        </div>
+        <div class="cart-popup__body" id="cartItemsContainer">
+            <p class="cart-empty">Корзина пуста</p>
+        </div>
+        <div class="cart-popup__footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span class="cart-total__amount" id="cartTotalAmount">0 BYN</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn" style="width: 100%;">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+<script src="/healthOnHand/script.js"></script>
+<script src="/healthOnHand/profile.js"></script>
+
+</body>
+</html>

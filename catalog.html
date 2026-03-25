@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — HealthOnHand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogStyle.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">HealthOnHand</a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html" class="active">Каталог</a>
+            <a href="blog.html">Блог</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+        <div class="cart">🛒 <span class="cart-count">0</span></div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <span>Каталог</span>
+        </div>
+
+        <h1 class="section-title">Каталог фитнес-трекеров</h1>
+
+        <!-- Каталог с фильтрами -->
+        <div class="catalog-layout">
+            <!-- Фильтры -->
+            <aside class="filters">
+                <div class="filter-block">
+                    <h3>Цена</h3>
+                    <div class="price-inputs">
+                        <input type="number" id="minPrice" placeholder="От 0" value="">
+                        <input type="number" id="maxPrice" placeholder="До 2000" value="">
+                    </div>
+                    <button class="apply-filter" id="applyPriceFilter">Применить</button>
+                </div>
+
+                <div class="filter-block">
+                    <h3>Бренд</h3>
+                    <label><input type="checkbox" class="brand-filter" value="Xiaomi"> Xiaomi </label>
+                    <label><input type="checkbox" class="brand-filter" value="Samsung"> Samsung </label>
+                    <label><input type="checkbox" class="brand-filter" value="Garmin"> Garmin </label>
+                    <label><input type="checkbox" class="brand-filter" value="Huawei"> Huawei </label>
+                    <label><input type="checkbox" class="brand-filter" value="Apple"> Apple </label>
+                    <label><input type="checkbox" class="brand-filter" value="Amazfit"> Amazfit</label>
+                </div>
+
+                <button class="reset-filters" id="resetFilters">Сбросить фильтры</button>
+            </aside>
+
+            <!-- Список товаров -->
+            <div>
+                <!-- Сортировка -->
+                <div class="catalog-header">
+                    <div class="products-count" id="productsCount">Найдено: 38 товаров</div>
+                    <select class="sort-select" id="sortSelect">
+                        <option value="default">По умолчанию</option>
+                        <option value="priceAsc">По возрастанию цены</option>
+                        <option value="priceDesc">По убыванию цены</option>
+                        <option value="popular">По популярности</option>
+                    </select>
+                </div>
+
+                <!-- Сетка товаров -->
+              <div class="products-grid" id="productsGrid"></div>
+
+                <!-- Пагинация -->
+                <!-- <div class="pagination" id="pagination">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copy">© 2026 HealthOnHand. Все права защищены.</div>
+            <div class="footer__links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- POPUP КОРЗИНЫ -->
+<div class="cart-popup" id="cartPopup">
+    <div class="cart-popup__overlay" id="cartOverlay"></div>
+    <div class="cart-popup__content">
+        <div class="cart-popup__header">
+            <h2>Корзина</h2>
+            <button class="cart-popup__close" id="closeCartPopup">✕</button>
+        </div>
+        <div class="cart-popup__body" id="cartItemsContainer">
+            <p class="cart-empty">Корзина пуста</p>
+        </div>
+        <div class="cart-popup__footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span class="cart-total__amount" id="cartTotalAmount">0 BYN</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn" style="width: 100%;">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+<!-- POPUP ТОВАРА -->
+<div class="product-popup" id="productPopup">
+    <div class="product-popup__overlay" id="productOverlay"></div>
+    <div class="product-popup__content">
+        <button class="product-popup__close" id="closeProductPopup">✕</button>
+        <div class="product-popup__body" id="productPopupBody"></div>
+    </div>
+</div>
+
+</body>
+</html>

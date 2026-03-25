@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthOnHand — фитнес‑трекеры</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/healthOnHand/script.js" defer></script>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="container header__inner">
+        <a href="/" class="logo">HealthOnHand</a>
+        <nav class="nav">
+            <a href="#hero" class="active">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="blog.html">Блог</a>
+            <a href="profile.html">Профиль</a>
+            
+        </nav>
+        <div class="cart">🛒 <span class="cart-count">0</span></div>
+    </div>
+</header>
+
+<!-- ГЛАВНЫЙ ЭКРАН (БЕЗ КАРТИНКИ, ТЕКСТ ПО ЦЕНТРУ) -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content">
+            <h1 class="hero__title">Здоровье <span class="accent">на руке</span></h1>
+            <p class="hero__text">
+                Умные фитнес‑трекеры для тех, кто хочет следить за здоровьем,
+                сном и активностью. Доставка по Беларуси.
+            </p>
+            <div class="hero__buttons">
+                <a href="catalog.html" class="btn btn-primary">Выбрать трекер</a>
+                <a href="#about" class="btn btn-outline">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- О НАС -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <div class="about__inner">
+            <div class="about__text">
+                <p><strong>HealthOnHand</strong> — белорусский интернет-магазин умных гаджетов для здоровья. Мы помогаем людям следить за своим состоянием с помощью современных технологий.</p>
+                <p>Наши трекеры синхронизируются с iPhone и Android, считают шаги, пульс, качество сна и даже уровень стресса. А ещё — стильно выглядят на руке.</p>
+            </div>
+            <div class="about__stats">
+                <div class="stat">
+                    <span class="stat__number">5+</span>
+                    <span class="stat__label">лет на рынке</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">10k+</span>
+                    <span class="stat__label">довольных клиентов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">24/7</span>
+                    <span class="stat__label">поддержка</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="benefits" id="benefits">
+    <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon">❤️</div>
+                <h3>Точный пульсометр</h3>
+                <p>Измерение пульса в реальном времени с медицинской точностью.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">🌊</div>
+                <h3>Водонепроницаемость</h3>
+                <p>Можно плавать и принимать душ — трекеру ничего не будет.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">📱</div>
+                <h3>Синхронизация</h3>
+                <p>Подключается к любому смартфону через Bluetooth.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon">🔋</div>
+                <h3>До 14 дней работы</h3>
+                <p>Долгое время без подзарядки даже при активном использовании.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ТОВАРЫ (популярные) -->
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title">Популярные трекеры</h2>
+        <div class="products__grid">
+            <div class="product-card">
+                <div class="product-card__badge">Хит</div>
+                <div class="product-card__image">⌚</div>
+                <h3 class="product-card__title">Xiaomi Mi Band 8</h3>
+                <p class="product-card__desc">1.62" AMOLED, пульсометр, SpO2</p>
+                <div class="product-card__price">159 BYN <small>199 BYN</small></div>
+                <button class="product-card__btn">В корзину</button>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">NFC</div>
+                <div class="product-card__image">⌚</div>
+                <h3 class="product-card__title">Xiaomi Mi Band 8 Pro</h3>
+                <p class="product-card__desc">GPS, NFC, пульсометр, 1.74"</p>
+                <div class="product-card__price">259 BYN</div>
+                <button class="product-card__btn">В корзину</button>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">-15%</div>
+                <div class="product-card__image">⌚</div>
+                <h3 class="product-card__title">Samsung Galaxy Fit 3</h3>
+                <p class="product-card__desc">5ATM, пульсометр, стресс</p>
+                <div class="product-card__price">289 BYN <small>349 BYN</small></div>
+                <button class="product-card__btn">В корзину</button>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">Новинка</div>
+                <div class="product-card__image">⌚</div>
+                <h3 class="product-card__title">Huawei Band 8</h3>
+                <p class="product-card__desc">1.47" AMOLED, пульсометр, SpO2</p>
+                <div class="product-card__price">129 BYN</div>
+                <button class="product-card__btn">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="reviews__grid">
+            <div class="review-card">
+                <p class="review-card__text">«Трекер работает отлично, батареи хватает на 2 недели. Синхронизация быстрая, приложение удобное.»</p>
+                <div class="review-card__author">— Екатерина, Минск</div>
+            </div>
+            <div class="review-card">
+                <p class="review-card__text">«Брал для бега. GPS точный, пульс не врёт. Рекомендую!»</p>
+                <div class="review-card__author">— Дмитрий, Гомель</div>
+            </div>
+            <div class="review-card">
+                <p class="review-card__text">«Доставили быстро, помогли с настройкой. Трекер — огонь!»</p>
+                <div class="review-card__author">— Анна, Брест</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+    <div class="container">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq__list">
+            <div class="faq-item">
+                <button class="faq-question">📦 Сколько идёт доставка?</button>
+                <div class="faq-answer">По Минску — 1 день, по Беларуси — 2–3 дня.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">💳 Можно ли оплатить картой?</button>
+                <div class="faq-answer">Да, картой, наличными или через ЕРИП.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">🔧 Помогаете с настройкой?</button>
+                <div class="faq-answer">Да, мы подключаем и настраиваем трекер при покупке в офлайн‑точке.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts__inner">
+            <div class="contacts__info">
+                <p>📞 +375 (29) 123-45-67</p>
+                <p>✉️ healthonhand@gmail.com</p>
+                <p>📍 Минск, ул. Девайта, 9</p>
+                
+            </div>
+            <div class="contacts__form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Сообщение"></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copy">© 2026 HealthOnHand. Все права защищены.</div>
+            <div class="footer__links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- POPUP КОРЗИНЫ -->
+<div class="cart-popup" id="cartPopup">
+    <div class="cart-popup__overlay" id="cartOverlay"></div>
+    <div class="cart-popup__content">
+        <div class="cart-popup__header">
+            <h2>Корзина</h2>
+            <button class="cart-popup__close" id="closeCartPopup">✕</button>
+        </div>
+        <div class="cart-popup__body" id="cartItemsContainer">
+            <p class="cart-empty">Корзина пуста</p>
+        </div>
+        <div class="cart-popup__footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span class="cart-total__amount" id="cartTotalAmount">0 BYN</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn" style="width: 100%;">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
